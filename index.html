@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Market</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> market </a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#features">features</a>
+            <a href="#products">products</a>
+            <a href="#categories">categories</a>
+            <a href="#review">review</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+    </header>
+
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>fresh and <span>organic</span> products for you</h3>
+            <p></p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+
+        <h1 class="heading"> our <span>features</span> </h1>
+
+
+        <div class="box-container">
+            <div class="box">
+                <img src="media/grocery_features.jpg" alt="">
+                <h3>fresh and organic</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eum in maiores nisi quam, sed, maxime
+                    minus neque ea obcaecati autem dicta dolorum voluptatibus ipsam numquam eveniet! Fuga, vero odit!
+                </p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="media/delivery.jpg" alt="">
+                <h3>free delivery</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eum in maiores nisi quam, sed, maxime
+                    minus neque ea obcaecati autem dicta dolorum voluptatibus ipsam numquam eveniet! Fuga, vero odit!
+                </p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="media/payment.jpg" alt="">
+                <h3>easy payments</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eum in maiores nisi quam, sed, maxime
+                    minus neque ea obcaecati autem dicta dolorum voluptatibus ipsam numquam eveniet! Fuga, vero odit!
+                </p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="products" id="products">
+        <h1 class="heading"> our <span>products</span> </h1>
+        <div class="products-button">
+            <button class="btn" onclick="loadProducts('fruit')">fruits</button>
+            <button class="btn" onclick="loadProducts('vegetable')">vegetables</button>
+        </div>
+    </section>
+
+
+
+    <div id="modal-overlay"></div>
+
+    <div id="modal">
+        <div id="close-btn">Close (5)</div>
+        <h2>help dogs please!</h2>
+        <img src="/media/dog-rescue-ad.jpg" alt="" style="max-width: 400px; height:auto;">
+    </div>
+
+    <div class="container" id="container">
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
